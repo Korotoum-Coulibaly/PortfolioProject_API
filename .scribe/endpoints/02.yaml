@@ -1,0 +1,28 @@
+name: Endpoints
+description: ''
+endpoints:
+  -
+    httpMethods:
+      - GET
+    uri: sanctum/csrf-cookie
+    metadata:
+      title: 'Return an empty response simply to trigger the storage of the CSRF cookie in the browser.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 204
+        content: ''
+        headers:
+          cache-control: 'no-cache, private'
+          access-control-allow-origin: '*'
+          set-cookie: 'XSRF-TOKEN=eyJpdiI6InZpdmg3NHhCMTYvY0xmM3NtUXFWRGc9PSIsInZhbHVlIjoiYm9CUDJXaGFBdEVzREk4cnZkZGhTa1lwaUtUWDl0RkxWOFpPKzBudE1JZWVGQ0tFMkJPRktMSzYzS3c3N3V6ODdaUWU1TThjdGE2Z01LN081SVo2dENJSVp0ZWVIem9GM2p0MmMrR1pQVXhLQnlKWkxrQjgwVmVuaDVCWXJ6MmEiLCJtYWMiOiI5NzkwZmMzNzY5Mzc3MTE4NzM1YzI5OTljZDBhZDNkNzA1YzE2NjQ1MGNiYmU3NTk5NWI5MmU2ODNlM2ZmNGFjIiwidGFnIjoiIn0%3D; expires=Mon, 10-Jul-2023 16:08:10 GMT; Max-Age=7200; path=/; samesite=lax; laravel_session=eyJpdiI6IllTZ01LK1VHckp1SDFDV0hQY2c0eEE9PSIsInZhbHVlIjoiV2hKbHBwbUZpaXRHNFFidlVmNStZalFNSFN6VXRQbXgrSjd1S05VR1BZZWRGclR3bzZQWmRucStZNlZMVWFPenRyWC9uYjBkZC9ncW5PS2VUS0ZVa3J2OVJ3ZEhodVpNMllZWXV4RjNpeDlWWUtsOVhRUm1OTStBQUJlUkhLbXMiLCJtYWMiOiI1MTQxOGRjMjcwMWI5NjY2NmYyYzllY2IzNzk5YTQ4Y2IzNTMwNGJmZTEyNzY3ODAyNDVlODk4OTQwMjc4MDhiIiwidGFnIjoiIn0%3D; expires=Mon, 10-Jul-2023 16:08:10 GMT; Max-Age=7200; path=/; httponly; samesite=lax'
+        description: null
+    responseFields: []

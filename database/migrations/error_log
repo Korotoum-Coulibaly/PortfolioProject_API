@@ -1,0 +1,4 @@
+[27-Mar-2023 12:06:07 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/clouncuq/generateur.cloudsteroids.com/database/migrations/2023_01_25_153206_create_prospects_table.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/clouncuq/generateur.cloudsteroids.com/database/migrations/2023_01_25_153206_create_prospects_table.php on line 12
